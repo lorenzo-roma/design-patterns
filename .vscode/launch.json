@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch current file",
+            "preLaunchTask":"tsc: build - tsconfig.json",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program":"${file}",
+            "outFiles":[
+                "${workspaceFolder}/dist/*.js"
+            ],
+            "console":"integratedTerminal"
+        }
+    ]
+}
