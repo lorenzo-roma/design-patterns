@@ -2,19 +2,22 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Launch Current File",
             "type": "node",
             "request": "launch",
-            "name": "Launch current file",
+            "runtimeExecutable": "node",
+            "runtimeArgs": ["--nolazy", "-r", "ts-node/register/transpile-only"],
+            "args": ["${file}"],
+            "cwd": "${workspaceRoot}",
+            "internalConsoleOptions": "openOnSessionStart",
+            "skipFiles": ["<node_internals>/**", "node_modules/**"],
             "preLaunchTask":"tsc: build - tsconfig.json",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
             "program":"${file}",
             "outFiles":[
                 "${workspaceFolder}/dist/*.js"
             ],
             "sourceMaps":true,
             "console":"integratedTerminal"
-        }
+          }
     ]
 }
