@@ -1,0 +1,1 @@
+Use singleton pattern when you want to expose the same istance of an object. In this case I used it for the db.
