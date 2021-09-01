@@ -1,0 +1,2 @@
+Visitor patter can be used to add logic to implementations of interfaces or extended classes ( like in the case of Assets ).
+Instead of using a switch or add the logic inside the class, we can centralize it in one visitor. Furthermore, more visitor can be added without changing the classes anymore.
