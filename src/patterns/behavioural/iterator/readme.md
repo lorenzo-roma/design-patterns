@@ -1,0 +1,1 @@
+Iterator pattern can be used to centralize collection traversion logic.
