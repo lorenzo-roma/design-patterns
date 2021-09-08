@@ -1,0 +1,1 @@
+Template pattern can be useful to have a blueprint to some phases of a bigger algorithm, which can be implemented in different ways based on the concrete object implementations.
